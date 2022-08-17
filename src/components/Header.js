@@ -5,9 +5,9 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 export const Header = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <SimpleLineIcons name="camera" style={{ fontSize: 40 }} />
-      <Text style={{fontFamily: 'notoserif', fontSize: 40 }}>Instagram</Text>
-      <Ionicons name="chatbox-ellipses-outline" style={{ fontSize: 40 }} />
+      <SimpleLineIcons name="camera" style={{ fontSize: 30 }} />
+      <Text style={{fontFamily: 'notoserif', fontSize: 25 }}>Instagram</Text>
+      <Ionicons name="chatbox-ellipses-outline" style={{ fontSize: 30 }} />
     </SafeAreaView>
   );
 };
