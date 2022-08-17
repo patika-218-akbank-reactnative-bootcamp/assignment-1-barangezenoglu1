@@ -5,12 +5,12 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 import Feather from "react-native-vector-icons/Feather";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 
-export const PostContent = () => {
+export const PostContent = ({postUrl, likes, userName, description}) => {
   return (
     <View>
       <View>
         <Image
-          source={{ uri: "https://picsum.photos/id/1/200/300" }}
+          source={{ uri: postUrl }}
           style={styles.avatar}
         />
       </View>
@@ -29,8 +29,8 @@ export const PostContent = () => {
         </View>
       </View>
       
-        <Text style={styles.like}>25,325 likes</Text>
-        <Text numberOfLines={2} style={styles.description}><Text style={styles.descriptionUserName}>Baran Gezenoglu</Text> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</Text>
+      <Text style={styles.like}>{likes}</Text>
+        <Text numberOfLines={2} style={styles.description}><Text style={styles.descriptionUserName}>{userName}</Text>{'' + description}</Text>
       
       </View>
     </View>

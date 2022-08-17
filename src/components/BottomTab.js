@@ -14,6 +14,7 @@ export const BottomTab = () => {
 
 const styles = StyleSheet.create({
     container: {
+        
         paddingLeft: 15,
         paddingTop: 3,
         paddingBottom: 3,

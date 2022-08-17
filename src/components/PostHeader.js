@@ -1,19 +1,19 @@
 import { View, StyleSheet, Image, Text } from "react-native";
 import Entypo from "react-native-vector-icons/Entypo";
 
-export const PostHeader = () => {
+export const PostHeader = ({userName, imageUrl}) => {
   return (
     <View style={styles.container}>
       <View style={styles.avatarAndName}>
         <View style={styles.avatarContainer}>
           <Image
             source={{
-              uri: "https://xsgames.co/randomusers/avatar.php?g=pixel",
+              uri: imageUrl,
             }}
             style={styles.avatar}
           />
         </View>
-        <Text style={styles.userName}>Baran Gezenoglu</Text>
+        <Text style={styles.userName}>{userName}</Text>
       </View>
       <Entypo name="dots-three-horizontal" style={{ fontSize: 30 }} />
     </View>

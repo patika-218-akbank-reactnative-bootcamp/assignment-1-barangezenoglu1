@@ -9,54 +9,7 @@ import {
   Image,
 } from "react-native";
 
-export const Stories = () => {
-  const stories = [
-    {
-      id: 1,
-      name: "Baran",
-      image: "https://xsgames.co/randomusers/avatar.php?g=male",
-    },
-    {
-      id: 2,
-      name: "Ali",
-      image: "https://xsgames.co/randomusers/avatar.php?g=female",
-    },
-    {
-      id: 3,
-      name: "Name",
-      image: "https://xsgames.co/randomusers/avatar.php?g=pixel ",
-    },
-    {
-      id: 4,
-      name: "Name",
-      image: "https://xsgames.co/randomusers/avatar.php?g=pixel ",
-    },
-    {
-      id: 5,
-      name: "Name",
-      image: "https://xsgames.co/randomusers/avatar.php?g=pixel ",
-    },
-    {
-      id: 6,
-      name: "Name",
-      image: "https://xsgames.co/randomusers/avatar.php?g=pixel ",
-    },
-    {
-      id: 7,
-      name: "Name",
-      image: "https://xsgames.co/randomusers/avatar.php?g=pixel ",
-    },
-    {
-      id: 8,
-      name: "Name",
-      image: "https://xsgames.co/randomusers/avatar.php?g=pixel ",
-    },
-    {
-      id: 9,
-      name: "Name",
-      image: "https://xsgames.co/randomusers/avatar.php?g=pixel ",
-    },
-  ];
+export const Stories = ({stories}) => {
 
   const singleStory = ({ item }) => {
     return (
@@ -73,6 +26,7 @@ export const Stories = () => {
     <SafeAreaView style={styles.container}>
       <FlatList
         horizontal
+        showsHorizontalScrollIndicator={false}
         data={stories}
         renderItem={singleStory}
       />
