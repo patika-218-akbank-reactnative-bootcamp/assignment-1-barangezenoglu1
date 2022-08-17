@@ -1,7 +1,7 @@
 import { View, StyleSheet, Image, Text } from "react-native";
 import Entypo from "react-native-vector-icons/Entypo";
 
-export const PostHeader = ({userName, imageUrl}) => {
+export const PostHeader = ({ userName, imageUrl }) => {
   return (
     <View style={styles.container}>
       <View style={styles.avatarAndName}>
@@ -27,14 +27,15 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
+    borderTopWidth: 0.9,
+    borderColor: "#C3BEBE",
   },
   userName: {
     left: 5,
     fontSize: 18,
-    fontWeight: "500" 
+    fontWeight: "500",
   },
   avatarAndName: {
-
     display: "flex",
     flexDirection: "row",
     alignItems: "center",

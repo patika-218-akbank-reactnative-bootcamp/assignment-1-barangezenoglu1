@@ -2,7 +2,7 @@ import { View, StyleSheet, Text } from "react-native";
 import { PostContent } from "./PostContent";
 import { PostHeader } from "./PostHeader";
 
-export const Posts = ({postData}) => {
+export const Posts = ({ postData }) => {
   return postData.map((post, index) => {
     return (
       <View key={index}>
