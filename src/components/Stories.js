@@ -1,16 +1,13 @@
-import react from "react";
 import {
   FlatList,
   Text,
   SafeAreaView,
-  ScrollView,
   View,
   StyleSheet,
   Image,
 } from "react-native";
 
-export const Stories = ({stories}) => {
-
+export const Stories = ({ stories }) => {
   const singleStory = ({ item }) => {
     return (
       <View style={styles.story}>
@@ -36,8 +33,7 @@ export const Stories = ({stories}) => {
 
 const styles = StyleSheet.create({
   container: {
-    borderColor: "grey",
-    borderBottomWidth: 0.9,
+    borderColor: "#C3BEBE",
     borderTopWidth: 0.9,
   },
   story: {
