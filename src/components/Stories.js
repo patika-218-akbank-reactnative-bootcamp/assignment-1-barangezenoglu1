@@ -3,6 +3,7 @@ import {
   FlatList,
   Text,
   SafeAreaView,
+  ScrollView,
   View,
   StyleSheet,
   Image,
@@ -25,6 +26,36 @@ export const Stories = () => {
       name: "Name",
       image: "https://xsgames.co/randomusers/avatar.php?g=pixel ",
     },
+    {
+      id: 4,
+      name: "Name",
+      image: "https://xsgames.co/randomusers/avatar.php?g=pixel ",
+    },
+    {
+      id: 5,
+      name: "Name",
+      image: "https://xsgames.co/randomusers/avatar.php?g=pixel ",
+    },
+    {
+      id: 6,
+      name: "Name",
+      image: "https://xsgames.co/randomusers/avatar.php?g=pixel ",
+    },
+    {
+      id: 7,
+      name: "Name",
+      image: "https://xsgames.co/randomusers/avatar.php?g=pixel ",
+    },
+    {
+      id: 8,
+      name: "Name",
+      image: "https://xsgames.co/randomusers/avatar.php?g=pixel ",
+    },
+    {
+      id: 9,
+      name: "Name",
+      image: "https://xsgames.co/randomusers/avatar.php?g=pixel ",
+    },
   ];
 
   const singleStory = ({ item }) => {
@@ -41,9 +72,8 @@ export const Stories = () => {
   return (
     <SafeAreaView style={styles.container}>
       <FlatList
-        ListHeaderComponentStyle={styles.listHeader}
+        horizontal
         data={stories}
-        numColumns={stories.length}
         renderItem={singleStory}
       />
     </SafeAreaView>
@@ -54,17 +84,15 @@ const styles = StyleSheet.create({
   container: {
     borderColor: "grey",
     borderBottomWidth: 0.9,
-    borderTopWidth: 0.9
+    borderTopWidth: 0.9,
   },
   story: {
     padding: 10,
-
-    flexDirection: "column",
     alignItems: "center",
   },
-  avatarCOntainer: {
+  avatarContainer: {
     height: 60,
-    width: 60,
+    width: 63,
     justifyContent: "center",
     alignItems: "center",
   },
