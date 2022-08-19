@@ -1,4 +1,5 @@
-import { Image, SafeAreaView, StyleSheet, Text } from "react-native";
+import React from "react";
+import { Image, SafeAreaView, StyleSheet } from "react-native";
 import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import InstagramLogo from "../assets/instagram.png";
