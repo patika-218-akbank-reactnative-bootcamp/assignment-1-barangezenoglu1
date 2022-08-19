@@ -1,13 +1,14 @@
+import React from "react";
 import { StyleSheet, View } from "react-native";
 import Octicons from "react-native-vector-icons/Octicons";
 import AntDesign from "react-native-vector-icons/AntDesign";
 export const BottomTab = () => {
   return (
     <View style={styles.container}>
-      <Octicons name="home" style={{ fontSize: 35, paddingRight: 10 }} />
-      <AntDesign name="search1" style={{ fontSize: 35, paddingRight: 10 }} />
-      <Octicons name="diff-added" style={{ fontSize: 35, paddingRight: 10 }} />
-      <AntDesign name="hearto" style={{ fontSize: 35, paddingRight: 10 }} />
+      <Octicons name="home" style={{ fontSize: 30, paddingRight: 10 }} />
+      <AntDesign name="search1" style={{ fontSize: 30, paddingRight: 10 }} />
+      <Octicons name="diff-added" style={{ fontSize: 30, paddingRight: 10 }} />
+      <AntDesign name="hearto" style={{ fontSize: 30, paddingRight: 10 }} />
     </View>
   );
 };

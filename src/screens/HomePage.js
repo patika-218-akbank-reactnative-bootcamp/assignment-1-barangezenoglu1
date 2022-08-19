@@ -1,3 +1,4 @@
+import React from "react";
 import { View, ScrollView } from "react-native";
 import { Header } from "../components/Header";
 import { Stories } from "../components/Stories";
